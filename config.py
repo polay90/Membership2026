@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Bot Configuration
-BOT_TOKEN = os.getenv('BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE')
+BOT_TOKEN = os.getenv('BOT_TOKEN', '8514127937:AAFn2nk2ON0Zkdgi9grjPtib0wP8yGn0sY8')
 ADMIN_IDS = list(map(int, os.getenv('ADMIN_IDS', '').split(','))) if os.getenv('ADMIN_IDS') else []
 
 # Database
