@@ -3,10 +3,10 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, ConversationHandler, filters
 from telegram.constants import ChatAction
 from config import BOT_TOKEN, ADMIN_IDS
-from handlers import (
+from handler import (
     start, login, send_otp, verify_otp, show_menu, 
     service_callback, process_service, admin_panel, 
-    verify_topup, topup_callback, process_topup,
+    verify_otp, topup_callback, process_topup,
     my_balance, cancel
 )
 from database import init_db
